@@ -1,6 +1,3 @@
-# index.html
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- Meta Pixel Code -->
 <script>
@@ -44,13 +41,13 @@ src="https://www.facebook.com/tr?id=2004304617097086&ev=PageView&noscript=1"
     <header class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-left">
-                <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=200" alt="Logo" class="logo">
+                <img src="Img/LOFO.jpeg" alt="Logo" class="logo">
             </div>
 
             <nav class="nav-center">
-                <a href="#hero">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
+                <a href="#hero">Inicio</a>
+                <a href="#about">Conocenos</a>
+                <a href="#services">Productos</a>
             </nav>
 
             <div class="nav-right">
@@ -66,14 +63,14 @@ src="https://www.facebook.com/tr?id=2004304617097086&ev=PageView&noscript=1"
         <div class="hero-layer layer-front"></div>
 
         <div class="hero-content">
-            <h1>Elevating Your Brand Presence</h1>
+            <h1>Tus reglas, tus limites</h1>
             <p>We craft impactful strategies that position your business for growth and recognition.</p>
         </div>
     </section>
 
     <!-- ================= ABOUT ================= -->
     <section class="about fade-in" id="about">
-        <h2>About Us</h2>
+        <h2>¿Quienes Somos?</h2>
         <p class="about-intro">We are a passionate team dedicated to building strong brand identities and communication strategies.</p>
 
         <div class="about-container">
@@ -82,7 +79,7 @@ src="https://www.facebook.com/tr?id=2004304617097086&ev=PageView&noscript=1"
             </div>
 
             <div class="about-right">
-                <h3>Our Mission</h3>
+                <h3>Misión</h3>
                 <p>Our mission is to empower businesses with innovative solutions that enhance visibility and create meaningful connections with their audience.</p>
 
                 <div class="social-links">
@@ -96,7 +93,7 @@ src="https://www.facebook.com/tr?id=2004304617097086&ev=PageView&noscript=1"
 
     <!-- ================= SERVICES ================= -->
     <section class="services fade-in" id="services">
-        <h2>Our Services</h2>
+        <h2>Productos</h2>
         <p class="services-intro">We provide tailored solutions to strengthen your brand and expand your reach.</p>
 
         <div class="services-container">
@@ -124,7 +121,7 @@ src="https://www.facebook.com/tr?id=2004304617097086&ev=PageView&noscript=1"
     <footer class="footer" id="contact">
         <div class="footer-container">
             <div class="footer-left">
-                <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=200" alt="Logo">
+                <img src="Img/Loguito.png" alt="Logo">
                 <p>Building brands with creativity, strategy, and measurable results.</p>
             </div>
 
@@ -146,282 +143,6 @@ src="https://www.facebook.com/tr?id=2004304617097086&ev=PageView&noscript=1"
             <i class="fab fa-whatsapp"></i>
         </a>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="SCRIPT/script.js"></script>
 </body>
 </html>
-```
-
----
-
-# style.css
-
-```css
-/* ================= GLOBAL STYLES ================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #222;
-    background: #f9f9f9;
-}
-
-section {
-    padding: 80px 10%;
-    text-align: center;
-}
-
-h1, h2, h3 {
-    font-weight: 600;
-}
-
-/* ================= NAVBAR ================= */
-.navbar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background: #fff;
-    z-index: 1000;
-    transition: box-shadow 0.3s ease;
-}
-
-.navbar.scrolled {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 10%;
-}
-
-.logo {
-    height: 40px;
-}
-
-.nav-center a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s;
-}
-
-.nav-center a:hover {
-    color: #0077ff;
-}
-
-.btn-primary {
-    padding: 8px 18px;
-    background: #0077ff;
-    color: #fff;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: background 0.3s;
-}
-
-.btn-primary:hover {
-    background: #005ecc;
-}
-
-/* ================= HERO ================= */
-.hero {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-}
-
-.hero-layer {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    will-change: transform;
-}
-
-.layer-back {
-    background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
-    z-index: 1;
-}
-
-.layer-middle {
-    background-image: url('https://images.unsplash.com/photo-1492724441997-5dc865305da7');
-    z-index: 2;
-    opacity: 0.6;
-}
-
-.layer-front {
-    background-image: url('https://images.unsplash.com/photo-1492724441997-5dc865305da7');
-    z-index: 3;
-    opacity: 0.3;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 4;
-    max-width: 700px;
-}
-
-/* ================= ABOUT ================= */
-.about-container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-top: 40px;
-    text-align: left;
-}
-
-.about-left img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.social-links a {
-    margin-right: 15px;
-    font-size: 20px;
-    color: #0077ff;
-    transition: transform 0.3s;
-}
-
-.social-links a:hover {
-    transform: scale(1.2);
-}
-
-/* ================= SERVICES ================= */
-.services-container {
-    display: flex;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.service-card {
-    flex: 1;
-    background: #fff;
-    padding: 40px 20px;
-    border-radius: 15px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.service-card i {
-    font-size: 40px;
-    margin-bottom: 20px;
-    color: #0077ff;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
-}
-
-/* ================= FOOTER ================= */
-.footer {
-    background: #111;
-    color: #fff;
-    padding: 40px 10%;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.footer a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.whatsapp-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: #fff;
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 20px;
-    z-index: 2000;
-}
-
-/* ================= FADE IN ================= */
-.fade-in {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 900px) {
-    .about-container,
-    .services-container,
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav-container {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-```
-
----
-
-# script.js
-
-```javascript
-// ================= NAVBAR SHADOW ON SCROLL =================
-window.addEventListener('scroll', () => {
-    const navbar = document.getElementById('navbar');
-    navbar.classList.toggle('scrolled', window.scrollY > 50);
-});
-
-// ================= PARALLAX EFFECT =================
-document.addEventListener('mousemove', (e) => {
-    const layers = document.querySelectorAll('.hero-layer');
-    const x = (window.innerWidth / 2 - e.pageX) / 25;
-    const y = (window.innerHeight / 2 - e.pageY) / 25;
-
-    layers.forEach((layer, index) => {
-        const depth = (index + 1) * 10;
-        layer.style.transform = `translate(${x / depth}px, ${y / depth}px)`;
-    });
-});
-
-// ================= FADE IN ON SCROLL =================
-const faders = document.querySelectorAll('.fade-in');
-
-const appearOptions = {
-    threshold: 0.2
-};
-
-const appearOnScroll = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-    });
-}, appearOptions);
-
-faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-});
-```
