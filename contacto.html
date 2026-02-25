@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contactos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .contact-container {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            width: 350px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .btn-contact {
+            display: block;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-contact:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .whatsapp {
+            background: #25D366;
+        }
+
+        .facebook {
+            background: #1877F2;
+        }
+
+        .instagram {
+            background: #E1306C;
+        }
+
+        .btn-contact i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contact-container">
+        <h1>CONTACTOS</h1>
+
+        <a href="https://wa.me/+51940219840" target="_blank" class="btn-contact whatsapp">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+
+        <a href="https://web.facebook.com/profile.php?id=61587750441536&_rdc=3&_rdr#" target="_blank" class="btn-contact facebook">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+
+        <a href="https://www.instagram.com/oficial992026/" target="_blank" class="btn-contact instagram">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+
+        <a href="index.html" class="btn-volver">
+    ← Volver al Inicio
+</a>
+
+    </div>
+
+</body>
+</html>
