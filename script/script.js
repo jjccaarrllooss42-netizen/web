@@ -94,3 +94,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+function irCheckout() {
+    window.location.href = "registro.html";
+}
+
+

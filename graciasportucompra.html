@@ -29,13 +29,14 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '2004304617097086');
 fbq('track', 'PageView');
+fbq('track', 'Purchase', {value: 0.00, currency: 'PEN'});
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=2004304617097086&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-
-    <!-- Google Ads tag (gtag.js) -->
+    
+<!-- Google Ads tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18023521781"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -52,19 +53,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NJPTSCZV');</script>
 <!-- End Google Tag Manager -->
- 
 </head>
-    
+<head>
+<meta charset="UTF-8">
+<title>Gracias por tu compra</title>
+<link rel="stylesheet" href="css/style.css">
 
-<section class="gracias">
-    <h1>¡Gracias por Registrarte!</h1>
-    <p>
-        Hemos recibido tu solicitud correctamente.  
-        En breve me pondré en contacto contigo para conversar sobre tu proyecto.
-    </p>
+<style>
+.gracias-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
 
-    <a href="index.html" class="btn-primary">Volver al inicio</a>
-</section>
+.gracias-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.gracias-container p {
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="gracias-container">
+
+<h1>¡Gracias por tu compra! 🛍</h1>
+
+<p>
+Nos comunicaremos contigo para poder realizar el pago  
+y coordinar la entrega de tu pedido.
+</p>
+
+<a href="index.html" class="btn-primary">Seguir Comprando</a>
+
+</div>
 
 </body>
 </html>

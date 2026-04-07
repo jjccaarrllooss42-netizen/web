@@ -34,8 +34,8 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=2004304617097086&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-
-    <!-- Google Ads tag (gtag.js) -->
+    
+<!-- Google Ads tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18023521781"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -52,19 +52,104 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NJPTSCZV');</script>
 <!-- End Google Tag Manager -->
- 
 </head>
-    
 
-<section class="gracias">
-    <h1>¡Gracias por Registrarte!</h1>
-    <p>
-        Hemos recibido tu solicitud correctamente.  
-        En breve me pondré en contacto contigo para conversar sobre tu proyecto.
-    </p>
+<head>
+<meta charset="UTF-8">
+<title>Checkout</title>
+<link rel="stylesheet" href="css/style.css">
 
-    <a href="index.html" class="btn-primary">Volver al inicio</a>
-</section>
+
+
+<style>
+.checkout-container {
+    max-width: 900px;
+    margin: 100px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.checkout-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.checkout-item img {
+    width: 70px;
+    border-radius: 8px;
+}
+
+.checkout-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkout-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-finalizar {
+    background: black;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="checkout-container">
+
+<h2>Resumen de tu compra</h2>
+
+<div id="checkout-lista"></div>
+
+<h3>Total: S/ <span id="total"></span></h3>
+
+<form action="graciasportucompra.html" class="checkout-form">
+
+<input type="text" placeholder="Nombre completo" required>
+<input type="text" placeholder="Número de WhatsApp" required>
+<input type="email" placeholder="Correo electrónico" required>
+<input type="text" placeholder="Distrito" required>
+
+<button type="submit" class="btn-finalizar">Finalizar compra</button>
+
+</form>
+
+</div>
+
+<script>
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+let contenedor = document.getElementById("checkout-lista");
+let total = 0;
+
+carrito.forEach(producto => {
+    total += producto.precio;
+
+    contenedor.innerHTML += `
+        <div class="checkout-item">
+            <img src="${producto.imagen}">
+            <div>
+                <p>${producto.nombre}</p>
+                <strong>S/ ${producto.precio}</strong>
+            </div>
+        </div>
+    `;
+});
+
+document.getElementById("total").innerText = total.toFixed(2);
+</script>
 
 </body>
 </html>
