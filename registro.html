@@ -2,94 +2,123 @@
 <html lang="en">
 <head>
 
-        <!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NJPTSCZV');</script>
 <!-- End Google Tag Manager -->
-    
 
-    <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Modern portfolio website for a publicist or small business">
-    <title>Modern Portfolio</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="Img/Loguito.png" type="image/ico">
-
-</head>
-
-<head>
 <meta charset="UTF-8">
-<title>Checkout</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout - ACHÓRATE</title>
+
+<!-- Fuente -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+<!-- Iconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CSS principal -->
 <link rel="stylesheet" href="css/style.css">
 
-
+<link rel="icon" href="Img/Loguito.png">
 
 <style>
+
+/* CONTENEDOR */
 .checkout-container {
     max-width: 900px;
-    margin: 100px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
+    margin: 120px auto;
+    background: #111;
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
 }
 
+/* ITEMS */
 .checkout-item {
     display: flex;
     gap: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
 }
 
 .checkout-item img {
     width: 70px;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
+/* TOTAL */
+.checkout-container h2 {
+    margin-bottom: 20px;
+}
+
+.checkout-container h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* FORMULARIO */
 .checkout-form {
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
 .checkout-form input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #1a1a1a;
+    color: white;
 }
 
-.btn-finalizar {
-    background: black;
-    color: white;
-    padding: 12px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+.checkout-form input:focus {
+    outline: none;
+    border: 1px solid #25D366;
 }
+
+/* BOTÓN FINAL */
+.btn-finalizar {
+    background: #25D366;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-finalizar:hover {
+    transform: scale(1.05);
+}
+
+/* VOLVER */
+.btn-volver {
+    display: inline-block;
+    margin-top: 20px;
+    color: #25D366;
+    text-decoration: none;
+}
+
 </style>
+
 </head>
 
 <body>
 
-        <!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJPTSCZV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
 <div class="checkout-container">
 
-<h2>Resumen de tu compra</h2>
+<h2>🧾 Resumen de tu compra</h2>
 
 <div id="checkout-lista"></div>
 
@@ -102,9 +131,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <input type="email" placeholder="Correo electrónico" required>
 <input type="text" placeholder="Distrito" required>
 
-<button type="submit" class="btn-finalizar">Finalizar compra</button>
+<button type="submit" class="btn-finalizar">
+Finalizar compra
+</button>
 
 </form>
+
+<a href="carrito.html" class="btn-volver">← Volver al carrito</a>
 
 </div>
 

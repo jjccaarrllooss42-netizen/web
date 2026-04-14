@@ -2,39 +2,32 @@
 <html lang="en">
 <head>
 
-    <!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NJPTSCZV');</script>
-<!-- End Google Tag Manager --> 
+<!-- End Google Tag Manager -->
 
-
-    <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Modern portfolio website for a publicist or small business">
-    <title>Modern Portfolio</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="Img/Loguito.png" type="image/ico">
-
-</head>
-
-<head>
 <meta charset="UTF-8">
-<title>Gracias por tu compra</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gracias por tu compra - ACHÓRATE</title>
+
+<!-- Fuente -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+<!-- Iconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CSS -->
 <link rel="stylesheet" href="css/style.css">
 
+<link rel="icon" href="Img/Loguito.png">
+
 <style>
+
+/* CONTENEDOR */
 .gracias-container {
     height: 100vh;
     display: flex;
@@ -43,40 +36,78 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     align-items: center;
     text-align: center;
     padding: 20px;
+    background: #0f0f0f;
+    color: white;
 }
 
+/* TITULO */
 .gracias-container h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
+/* TEXTO */
 .gracias-container p {
     max-width: 500px;
     margin-bottom: 30px;
+    line-height: 1.6;
+    color: #ccc;
 }
+
+/* BOTÓN */
+.btn-primary {
+    background: #25D366;
+    padding: 14px 28px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+/* ICONO */
+.icono {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #25D366;
+}
+
 </style>
+
 </head>
 
 <body>
 
-            <!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJPTSCZV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
 
 <div class="gracias-container">
 
-<h1>¡Gracias por tu compra! 🛍</h1>
+<i class="fas fa-check-circle icono"></i>
+
+<h1>¡Pedido confirmado!</h1>
 
 <p>
-Nos comunicaremos contigo para poder realizar el pago  
-y coordinar la entrega de tu pedido.
+Ya eres parte de ACHÓRATE.  
+Nos estaremos comunicando contigo por WhatsApp para coordinar el pago  
+y la entrega de tu pedido.
 </p>
 
-<a href="index.html" class="btn-primary">Seguir Comprando</a>
+<a href="index.html" class="btn-primary">
+Seguir explorando
+</a>
 
 </div>
+
+<!-- BOTÓN WHATSAPP -->
+<a href="https://wa.me/+51923458169" class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>

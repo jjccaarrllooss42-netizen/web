@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html lang="en">
+
 <head>
-    
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -10,61 +10,66 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-NJPTSCZV');</script>
 <!-- End Google Tag Manager -->
 
-    <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Modern portfolio website for a publicist or small business">
-    <title>Modern Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACHÓRATE</title>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="Img/Loguito.png" type="image/ico">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="Img/Loguito.png">
 
 </head>
+
 <body>
 
-    <!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJPTSCZV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
 
 <!-- ================= NAVBAR ================= -->
 <header class="navbar" id="navbar">
     <div class="nav-container">
-        <div class="nav-left">
-            <img src="Img/LOFO.jpeg" alt="Logo" class="logo">
-        </div>
+
+        <img src="Img/LOFO.jpeg" class="logo">
 
         <nav class="nav-center">
             <a href="#hero">Inicio</a>
-            <a href="#nueva">Nueva Colección</a>
+            <a href="#nueva">Colección</a>
             <a href="#services">Productos</a>
             <a href="#formulario">Contacto</a>
+            <a href="#about">Quiénes somos</a>
         </nav>
 
         <div class="nav-right">
-            <a href="#formulario" class="btn-primary">Contacto</a>
+            <a href="https://wa.me/+51923458169" target="_blank" class="btn-primary">
+                Comprar
+            </a>
         </div>
+
     </div>
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- ================= HERO CARRUSEL ================= -->
 <section class="hero" id="hero">
-    <div class="hero-layer layer-back"></div>
-    <div class="hero-layer layer-middle"></div>
-    <div class="hero-layer layer-front"></div>
 
-    <div class="hero-content">
-        <img src="Img/Block.webp" alt="">
-        <h1>Sin reglas sin limites</h1>
+    <div class="hero-slider">
+        <img src="Img/portada 20.jpg" class="slide active">
+        <img src="Img/portada 21.jpg" class="slide">
+        <img src="Img/portada 22.jpeg" class="slide">
     </div>
+
+    <div class="hero-text">
+        <h1>ROMPE LAS REGLAS </h1>
+        <p>Ediciones limitadas. Diseños que no se repiten.</p>
+
+        <a href="https://wa.me/+51923458169" target="_blank" class="btn-hero">
+            Comprar por WhatsApp
+        </a>
+    </div>
+
 </section>
 
 <!-- ================= NUEVA COLECCIÓN ================= -->
@@ -77,82 +82,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="carousel-track">
 
-            <!-- ITEM 1 -->
             <div class="carousel-item">
-                <img src="Img/POLO 1.jpeg" alt="">
+                <img src="Img/POLO 1.jpeg">
                 <h5>Polo All things</h5>
-                <p class="price">S/ 59.90</p>
-                <button class="btn-cart" 
-data-name="Polo All things" 
-data-price="59.90" 
-data-img="Img/POLO 1.jpeg">
-Añadir al carrito
-</button>
+                <p>S/ 59.90</p>
+                <button class="btn-cart" data-name="Polo All things" data-price="59.90" data-img="Img/POLO 1.jpeg">Añadir</button>
             </div>
 
-            <!-- ITEM 2 -->
             <div class="carousel-item">
-                <img src="Img/POLO 2.jpeg" alt="">
+                <img src="Img/POLO 2.jpeg">
                 <h5>Polo Spirit</h5>
-                <p class="price">S/ 69.90</p>
-                <button class="btn-cart" 
-data-name="Polo Spirit" 
-data-price="69.90" 
-data-img="Img/POLO 2.jpeg">
-Añadir al carrito
-</button>
+                <p>S/ 69.90</p>
+                <button class="btn-cart" data-name="Polo Spirit" data-price="69.90" data-img="Img/POLO 2.jpeg">Añadir</button>
             </div>
 
-            <!-- ITEM 3 -->
             <div class="carousel-item">
-                <img src="Img/POLO 3.jpeg" alt="">
+                <img src="Img/POLO 3.jpeg">
                 <h5>Polo Kingdom</h5>
-                <p class="price">S/ 99.90</p>
-                <button class="btn-cart" 
-data-name="Polo Kingdom" 
-data-price="99.90" 
-data-img="Img/POLO 3.jpeg">
-Añadir al carrito
-</button>
-            </div>
-
-            <!-- ITEM 4 -->
-            <div class="carousel-item">
-                <img src="Img/POLO 4.jpeg" alt="">
-                <h5>Polo Anhoter</h5>
-                <p class="price">S/ 79.90</p>
-                <button class="btn-cart" 
-data-name="Polo Anhoter" 
-data-price="79.90" 
-data-img="Img/POLO 4.jpeg">
-Añadir al carrito
-</button>
-            </div>
-
-            <!-- ITEM 5 -->
-            <div class="carousel-item">
-                <img src="Img/POLO 5.jpeg" alt="">
-                <h5>Polo Balance</h5>
-                <p class="price">S/ 79.90</p>
-                <button class="btn-cart" 
-data-name="Polo Balance" 
-data-price="79.90" 
-data-img="Img/POLO 5.jpeg">
-Añadir al carrito
-</button>
-            </div>
-
-            <!-- ITEM 6 -->
-            <div class="carousel-item">
-                <img src="Img/POLO 6.jpeg" alt="">
-                <h5>Polo Fisher</h5>
-                <p class="price">S/ 79.90</p>
-                <button class="btn-cart" 
-data-name="Polo Fisher" 
-data-price="79.90" 
-data-img="Img/POLO 6.jpeg">
-Añadir al carrito
-</button>
+                <p>S/ 99.90</p>
+                <button class="btn-cart" data-name="Polo Kingdom" data-price="99.90" data-img="Img/POLO 3.jpeg">Añadir</button>
             </div>
 
         </div>
@@ -170,107 +118,92 @@ Añadir al carrito
     <div class="productos-container">
 
         <div class="producto-card">
-            <a href="polo.html">
-                <img src="Img/Polos.jpeg" alt="Polos">
-            </a>
+            <a href="polo.html"><img src="Img/Polos.jpeg"></a>
             <h5>Polos</h5>
-            <a href="polo.html" class="btn-producto">Información</a>
+            <a href="polo.html" class="btn-producto">Ver más</a>
         </div>
 
         <div class="producto-card">
-            <a href="hoodie.html">
-                <img src="Img/Hoodies.jpeg" alt="Hoodies">
-            </a>
+            <a href="hoodie.html"><img src="Img/Hoodies.jpeg"></a>
             <h5>Hoodies</h5>
-            <a href="hoodie.html" class="btn-producto">Información</a>
+            <a href="hoodie.html" class="btn-producto">Ver más</a>
         </div>
 
         <div class="producto-card">
-            <a href="baggy.html">
-                <img src="Img/Baggy 1.jpeg" alt="Baggy">
-            </a>
+            <a href="baggy.html"><img src="Img/Baggy 1.jpeg"></a>
             <h5>Baggy</h5>
-            <a href="baggy.html" class="btn-producto">Información</a>
+            <a href="baggy.html" class="btn-producto">Ver más</a>
         </div>
 
     </div>
+
 </section>
 
-<!-- ================= FORMULARIO ================= -->
+<!-- ================= CONTACTO PRO ================= -->
 <section class="contact-form" id="formulario">
-    <h2>Contáctanos</h2>
+
+    <h2> CREA TU ESTILO</h2>
+    <p>Déjanos tus datos y te escribimos directo para tu pedido</p>
 
     <form action="gracias.html">
+
         <input type="text" placeholder="Tu nombre" required>
-        <input type="number" placeholder="Numero de celular" required>
-        <textarea placeholder="Cuéntanos que prendas deseas..." rows="4" required></textarea>
+        <input type="number" placeholder="WhatsApp" required>
+        <textarea placeholder="¿Qué prenda quieres?" required></textarea>
 
         <button type="submit" class="btn-primary">Enviar</button>
+
     </form>
+
 </section>
 
-<!-- ================= ABOUT (AL FINAL) ================= -->
-<section class="about fade-in" id="about">
-    <h2>¿Quienes Somos?</h2>
-    <p class="about-intro">
-        Somos una marca que busca romper con lo establecido, creando prendas únicas e irrepetibles.
+<!-- ================= QUIÉNES SOMOS + VIDEO ================= -->
+<section class="about" id="about">
+
+    <h2>¿Quiénes somos?</h2>
+    <p>
+        ACHÓRATE no es solo ropa. Eres Tu!
+        Es actitud, romper las reglas y mostrar quién eres sin miedo.
     </p>
 
-    <div class="about-container">
-        <div class="about-left">
-            <img src="Img/uniformidad-industrial-ilunion.jpg.jpg" alt="">
-        </div>
-
-        <div class="about-right">
-            <h3>Misión</h3>
-            <p>
-                Diseñar y producir colecciones limitadas que inspiren a mostrarse sin límites.
-            </p>
-
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
+    <div class="video-container">
+        <iframe width="100%" height="400"
+        src="https://www.youtube.com/embed/tAguYlvIEdo"
+        frameborder="0"
+        allowfullscreen></iframe>
     </div>
+
 </section>
 
-    <!-- ================= FOOTER ================= -->
-    <footer class="footer" id="contact">
-        <div class="footer-container">
-            <div class="footer-left">
-                <img src="Img/Loguito.png" alt="Logo">
-                <p>Sin reglas, sin limites.</p>
-            </div>
-<div class="footer-center">
-    <a href="#hero">Inicio</a>
-    <a href="#about">Conócenos</a>
-    <a href="#services">Productos</a>
-</div>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
 
-<div class="footer-right">
+    <p>© ACHÓRATE - Sin reglas</p>
 
-    <a href="https://web.facebook.com/profile.php?id=61587750441536&_rdc=3&_rdr#" target="_blank">
-        <i class="fab fa-facebook"></i>
-    </a>
+</footer>
 
-    <a href="https://www.instagram.com/oficial992026/" target="_blank">
-        <i class="fab fa-instagram"></i>
-    </a>
-</div>
-        </div>
+<!-- BOTONES -->
+<a href="https://wa.me/+51923458169" class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/+51923458169" class="whatsapp-btn" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+<a href="carrito.html" class="cart-floating">
+    <i class="fas fa-shopping-cart"></i>
+</a>
 
-    <!-- BOTÓN CARRITO -->
-    <a href="carrito.html" class="cart-floating">
-        <i class="fas fa-shopping-cart"></i>
-    </a>
+<script src="script/script.js"></script>
 
-    <script src="script/script.js"></script>
+<!-- SCRIPT SLIDER -->
+<script>
+let slides = document.querySelectorAll(".slide");
+let i = 0;
+
+setInterval(() => {
+    slides[i].classList.remove("active");
+    i = (i + 1) % slides.length;
+    slides[i].classList.add("active");
+}, 3000);
+</script>
 
 </body>
 </html>
