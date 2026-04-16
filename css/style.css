@@ -28,7 +28,7 @@ body {
 }
 
 .logo {
-    height: 50px;
+    height: 70px;
 }
 
 .nav-center a {
@@ -166,6 +166,7 @@ section {
     text-align: center;
     transition: 0.4s;
     border: 1px solid transparent;
+    overflow: hidden; /* 👈 importante para el zoom */
 }
 
 .producto-card:hover {
@@ -177,6 +178,12 @@ section {
 .producto-card img {
     width: 100%;
     border-radius: 10px;
+    transition: transform 0.4s ease; /* 👈 animación */
+}
+
+/* 👇 EFECTO HOVER EN IMAGEN */
+.producto-card:hover img {
+    transform: scale(1.08);
 }
 
 .btn-producto {
@@ -195,26 +202,22 @@ section {
     box-shadow: 0 0 15px #25D366;
 }
 
-/* ================= CARRUSEL (FIX REAL 🔥) ================= */
+/* ================= CARRUSEL ================= */
 .carousel-container {
     position: relative;
     overflow: hidden;
     max-width: 1000px;
-    margin: 40px auto; /* 🔥 centrado vertical + horizontal */
+    margin: 0 auto; /* 👈 CENTRADO */
 }
 
-/* 🔥 CENTRADO REAL DEL TRACK */
 .carousel-track {
     display: flex;
-    justify-content: center; /* 🔥 clave */
-    align-items: center;
+    justify-content: center; /* 👈 evita que se vaya a la izquierda */
     transition: 0.5s;
 }
 
-/* 🔥 CONTROL DEL TAMAÑO */
 .carousel-item {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+    min-width: 33.33%;
     padding: 10px;
     text-align: center;
 }
@@ -246,18 +249,17 @@ section {
 /* BOTONES CARRUSEL */
 .carousel-btn {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%); /* 🔥 centrado vertical perfecto */
+    top: 40%;
+    transform: translateY(-50%);
     background: black;
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
-    z-index: 2;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev { left: 0; }
+.next { right: 0; }
 
 /* ================= FORMULARIO ================= */
 .contact-form {
@@ -342,26 +344,6 @@ section {
     height: 450px;
 }
 
-/* ================= DETALLE PRODUCTO ================= */
-.producto-detalle {
-    padding: 120px 10%;
-}
-
-.detalle-container {
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-.detalle-img img {
-    width: 400px;
-    border-radius: 15px;
-}
-
-.detalle-info {
-    max-width: 400px;
-}
-
 /* ================= BOTONES ================= */
 .cart-floating {
     position: fixed;
@@ -419,12 +401,6 @@ section {
     .detalle-container {
         flex-direction: column;
         text-align: center;
-    }
-
-    /* 🔥 carrusel responsive */
-    .carousel-item {
-        flex: 0 0 100%;
-        max-width: 100%;
     }
 
 }
